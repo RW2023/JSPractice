@@ -2,38 +2,50 @@ const titleDiv = document.querySelector('#title');
 const h1 = document.createElement('h1');
 h1.textContent = 'Dom Manipulation';
 titleDiv.appendChild(h1);
-const classList = ['gridBox']
+const classList = ['gridBox'];
 
 const grids = document.querySelectorAll('.gridBox');
 grids.forEach((grid) => {
-    classList.forEach((className) => {
-        grid.classList.add(className);
-    });
+  classList.forEach((className) => {
+    grid.classList.add(className);
+  });
 });
 
 const paragraphs = document.querySelectorAll('p');
-const textContents = ['First paragraph', 'Second paragraph', 'Third paragraph'];
-const [firstParagraph, secondParagraph, thirdParagraph] = paragraphs;
+const textContents = [
+  [
+    'First paragraph',
+    ' I am practicing dom manipulation. This paragraph is a dynamic text that is displayed once the button is clicked. The other boxes will display text as well',
+    '',
+  ],
+  [
+    'Second paragraph',
+    'The button click moves through the array of text to display the next message',
+    '',
+  ],
+  [
+    'Third paragraph',
+    '',
+    'this is the last paragraph to be displayed on the button click. All other boxes will be empty at this point.',
+  ],
+];
 
-let paragraph1Text='This paragraph is a dynamic text that is displayed once the button is clicked. The other boxes will display text as well';
-let paragraph2Text='';
-let paragraph3Text='';
+// Array to store the current index of the message for each paragraph
+let currentMessageIndex = [0, 0, 0];
 
 const button = document.querySelector('button');
 button.addEventListener('click', () => {
-    firstParagraph.textContent = paragraph1Text;
-    secondParagraph.textContent = paragraph2Text;
-    thirdParagraph.textContent = paragraph3Text;
-    paragraph1Text  = "this is the first paragraph";
-    paragraph2Text  = "this is the second paragraph";
-    paragraph3Text  = "this is the third paragraph";
+  paragraphs.forEach((paragraph, index) => {
+    // Update the text content of the paragraph based on the current index
+    paragraph.textContent = textContents[index][currentMessageIndex[index]];
+
+    // Increment the index for the next click
+    currentMessageIndex[index] =
+      (currentMessageIndex[index] + 1) % textContents[index].length;
+  });
 });
 
-
-
-
+// Initial text content setup
 paragraphs.forEach((paragraph, index) => {
-    if (index < textContents.length) {
-        paragraph.textContent = textContents[index];
-    }
+  paragraph.textContent = textContents[index][0];
 });
