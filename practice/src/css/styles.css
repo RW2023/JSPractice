@@ -1,0 +1,235 @@
+:root {
+  --overlay: rgba(184, 193, 236, 0.5);
+  --background:#232946;
+  --button: #ff8906;
+  --headline: #fffffe;
+  --paragraph: #b8c1ec;
+  --buttonText: #232946;
+  --stroke: #121629;
+  --main: #b8c1ec;
+  --highlight: #eebbc3;
+  --secondary: #fffffe;
+  --tertiary: #eebbc3;
+}
+
+/* CSS Reset */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    min-width: 100vh;
+}
+
+/* End of CSS Reset */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'roboto-slab', sans-serif;
+    background-color: var(--background);
+    color: var(--paragraph);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    ;
+}
+
+button {
+  width: 100px;
+    /* Set a specific width */
+    border-radius: 5px;
+    background-color: var(--button);
+    color: black;
+    cursor: pointer;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.classSwitch{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#familyIntro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid var(--highlight);
+  border-radius: 10px;
+  background-color: var(--stroke);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'poppins', sans-serif;
+    color: var(--headline);
+}
+
+.familyMembers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.familyMembers {
+  list-style-type: none;
+}
+
+.button {
+width: 100px;
+  /* Set a specific width */
+  border-radius: 5px;
+  background-color: var(--button);
+  color: black;
+  cursor: pointer;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button {
+  /* Add your styles here */
+width: 100px;
+  /* Set a specific width */
+  border-radius: 5px;
+  background-color: var(--button);
+  color: black;
+  cursor: pointer;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: var(--highlight);
+  color: var(--buttonText);
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid var(--highlight);
+  border-radius: 10px;
+  background-color: var(--stroke);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: var(--headline);
+}
+
+.card {
+    background-color: var(--background);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    border: 1px solid var(--highlight);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cardActions button {
+    width: 100px;
+      /* Set a specific width */
+      border-radius: 5px;
+      background-color: var(--button);
+      color: black;
+      cursor: pointer;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+}
+
+.mainContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+padding: 1rem;
+border: 1px solid var(--highlight);
+border-radius: 10px;
+background-color: var(--stroke);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'poppins', sans-serif;
+color: var(--headline);
+
+}
+
+.mainContent form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.mouseOver{
+  background-color: black;
+  color: white;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+form input {
+  width: 80%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan E. Wilson">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/practice/src/css/styles.css">
+  <title>Js Playground</title>
+</head>
+
+<body>
+  <div class="mainContent">
+    <h1 class="title">JS Playground</h1>
+    <p id="family-intro"></p>
+    <div class="card">
+      <ul class="familyMembers"></ul>
+      <h2>Feedback Form</h2>z
+      <form action="/submit" method="get">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="FirstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <div class="cardActions">
+          <input type="submit" value="Submit" class="submit-button">
+        </div>
+      </form>
+      <div>
+        <h2>
+          lets describe the family
+        </h2>
+      </div>
+    </div>
+    <div>
+      <div class="classSwitch">
+        <button type="button" id="selector">
+          click
+        </button>
+      </div>
+      <div id="ryan">
+        <h2>Ryan</h2>
+        <p>My name is Ryan and I am the oldest of the family. I am a software engineer and I love to code. I am
+          currently learning JavaScript and I am loving it. I am also a father of two and I love to spend time with my
+          family.</p>
+
+      </div>
+      <div id='veronique'>
+
+      </div>
+      <div>
+<div class='tableauPlaceholder' id='viz1707914872395' style='position: relative'><noscript><a href='#'><img
+        alt='Quantity by GroupBroken dowm  by Health  '
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YS&#47;YSYW63HFK&#47;1_rss.png'
+        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='path' value='shared&#47;YSYW63HFK' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image'
+      value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YS&#47;YSYW63HFK&#47;1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+    <param name='filter' value='publish=yes' />
+  </object></div>
+<script
+  type='text/javascript'>                    var divElement = document.getElementById('viz1707914872395'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>
+  </div>
+  <script src="/practice/src/js/app.js"></script>
+</body>
+
+</html>
